@@ -1,0 +1,8 @@
+Trees grow in nature.,True
+Fish cannot breathe in water.,False
+Birds can fly in the sky.,True
+Rivers are made of water.,True
+Monkeys swing from tree to tree.,True
+The sun gives light to the Earth.,True
+Plants do not need soil to grow.,False
+Rain helps trees to grow.,True

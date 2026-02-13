@@ -1,0 +1,210 @@
+/* Kiddy theme: simple, readable, playful (no external assets needed) */
+
+:root{
+  --bg1:#f7fbff;
+  --bg2:#fff7fb;
+  --card:#ffffff;
+  --ink:#17324d;
+  --muted:#5b6b7c;
+  --primary:#2b7cff;
+  --primary2:#6a5cff;
+  --good:#1f9d5a;
+  --bad:#d64545;
+  --line:rgba(23,50,77,.12);
+}
+
+*{box-sizing:border-box}
+
+body{
+  margin:0;
+  color:var(--ink);
+  font-family: ui-rounded, "Comic Sans MS", "Trebuchet MS", Arial, sans-serif;
+  background: radial-gradient(900px 400px at 15% 10%, var(--bg2), transparent),
+              radial-gradient(900px 400px at 85% 20%, var(--bg1), transparent),
+              linear-gradient(180deg, #ffffff, #f7fbff);
+  min-height:100vh;
+}
+
+.wrapper{
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 24px 16px 40px;
+}
+
+.brand{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  margin-bottom: 12px;
+}
+
+.logo{
+  width:48px;
+  height:48px;
+  border-radius: 16px;
+  background: linear-gradient(135deg, var(--primary), var(--primary2));
+  box-shadow: 0 10px 30px rgba(43,124,255,.22);
+  display:grid;
+  place-items:center;
+  color:#fff;
+  font-size: 26px;
+}
+
+h1{
+  margin:0;
+  font-size: 26px;
+  letter-spacing:.2px;
+}
+
+.subtitle{
+  margin: 6px 0 0;
+  color: var(--muted);
+}
+
+.card{
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 22px;
+  box-shadow: 0 18px 50px rgba(23,50,77,.08);
+  padding: 18px 18px 14px;
+}
+
+.row{
+  display:flex;
+  gap:12px;
+  flex-wrap:wrap;
+}
+
+.field{
+  display:flex;
+  flex-direction:column;
+  gap:6px;
+  flex: 1 1 260px;
+}
+
+label{
+  font-weight: 700;
+}
+
+input[type="text"],
+input[type="number"],
+select{
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 14px;
+  border: 1px solid var(--line);
+  outline:none;
+  font-size: 16px;
+}
+
+input[type="text"]:focus,
+select:focus{
+  border-color: rgba(43,124,255,.45);
+  box-shadow: 0 0 0 4px rgba(43,124,255,.12);
+}
+
+.pill{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  background: rgba(43,124,255,.10);
+  border: 1px solid rgba(43,124,255,.18);
+  padding: 8px 12px;
+  border-radius: 999px;
+  font-weight: 700;
+}
+
+.pill.good{background: rgba(31,157,90,.12); border-color: rgba(31,157,90,.20)}
+.pill.bad{background: rgba(214,69,69,.10); border-color: rgba(214,69,69,.18)}
+
+.hr{
+  height:1px;
+  background: var(--line);
+  margin: 16px 0;
+}
+
+.btnbar{
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px;
+  margin-top: 12px;
+}
+
+.btn, button, input[type="submit"]{
+  appearance:none;
+  border:0;
+  cursor:pointer;
+  border-radius: 14px;
+  padding: 12px 14px;
+  font-weight: 800;
+  font-size: 15px;
+  line-height: 1;
+  transition: transform .05s ease, box-shadow .2s ease, filter .2s ease;
+}
+
+.btn:active, button:active, input[type="submit"]:active{transform: translateY(1px)}
+
+.btn.primary, input[type="submit"].primary{
+  background: linear-gradient(135deg, var(--primary), var(--primary2));
+  color:#fff;
+  box-shadow: 0 14px 30px rgba(43,124,255,.20);
+}
+
+.btn.ghost{
+  background: rgba(23,50,77,.06);
+  color: var(--ink);
+  border: 1px solid var(--line);
+}
+
+.btn.good{background: rgba(31,157,90,.12); color: var(--ink); border:1px solid rgba(31,157,90,.22)}
+.btn.bad{background: rgba(214,69,69,.10); color: var(--ink); border:1px solid rgba(214,69,69,.18)}
+
+.notice{
+  padding: 12px 14px;
+  border-radius: 16px;
+  background: rgba(23,50,77,.05);
+  border: 1px solid var(--line);
+  color: var(--muted);
+}
+
+.q{
+  padding: 12px 12px;
+  border-radius: 18px;
+  border: 1px dashed rgba(23,50,77,.18);
+  background: rgba(247,251,255,.65);
+  margin: 12px 0;
+}
+
+.q p{margin:0 0 10px; font-weight: 800}
+
+.table{
+  width:100%;
+  border-collapse: separate;
+  border-spacing:0;
+  overflow:hidden;
+  border-radius: 18px;
+  border: 1px solid var(--line);
+}
+
+.table th, .table td{
+  padding: 10px 12px;
+  border-bottom: 1px solid var(--line);
+  text-align:left;
+}
+
+.table th{background: rgba(23,50,77,.04)}
+.table tr:last-child td{border-bottom:0}
+
+.small{
+  font-size: 13px;
+  color: var(--muted);
+}
+
+a{color: var(--primary); text-decoration:none; font-weight: 800}
+
+.footer{
+  margin-top: 12px;
+  color: var(--muted);
+  font-size: 13px;
+  text-align:center;
+}

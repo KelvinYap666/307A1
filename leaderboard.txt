@@ -1,0 +1,17 @@
+alpha,12
+bravo,-4
+charlie,0
+delta,18
+123,4
+3ch0,-5
+test,0
+test1,-4
+test123,-8
+final,-1
+m,8
+finaltest,0
+assignment1,2
+qwert,0
+popo,0
+hello,8
+abc,9

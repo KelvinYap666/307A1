@@ -1,0 +1,8 @@
+Which animal is the king of the jungle?,Lion
+What is the largest land animal?,Elephant
+What animal is known for its black and white stripes?,Zebra
+What is the largest mammal in the ocean?,Blue whale
+What is the tallest animal?,Giraffe
+What is the fastest land animal?,Cheetah
+Which animal is known as the ship of the desert?,Camel
+What animal carries their babies in pouches?,Kangaroo
